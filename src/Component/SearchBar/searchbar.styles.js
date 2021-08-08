@@ -9,31 +9,28 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-    position:relative;
-    max-width:var(455px);
+    position:absolute;
+    bottom:20px;
+    max-width:1600px;
     width:100%;
     height:55px;
-    background:var(#001100);
+    border:solid 3px black;
+    border-radius:25px;
     border-radius:40px;
     color:var(#111111);
 
-    img{
-        position:absolute;
-        left:15px;
-        top:14px;
-        width:30px;
-    }
+    
     input{
         font-size:var(50px);
         position:absolute;
         left:0;
         margin:8px 0;
-        padding:0 0 0 60px;
+        padding:0 0 0 20px;
         border:0;
         width:95%;
         background:transparent;
         height:40px;
-        color:var(--white);
+        color:#ececec;
         :focus{
             outline:none;
         }

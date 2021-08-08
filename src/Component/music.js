@@ -13,10 +13,12 @@ const Music = () => {
     //console.log("State: "+ state)
     //console.log("Info: "+ musicInfo)
     console.log("lyrics "+ lyrics.Lyrics)
+    console.log("stateTITLE "+state.Title)
     return(
     <>
+        
+        <Song Header = {musicInfo.Title} Album = {musicInfo.Album} Children = {lyrics.Lyrics} Img = {state.Image}></Song>
         <SearchBar setSearchTerm = {setSearchterm}/>
-        <Song Header = {lyrics.Lyrics}></Song>
     </>
     )
 }

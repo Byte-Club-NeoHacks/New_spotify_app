@@ -6,11 +6,13 @@ import React from 'react'
 
 
 import {Content,Wrapper} from './Home.styles'
-const Song = ({Header, Children}) => (
+const Song = ({Header, Children, Album,Img}) => (
     <Wrapper>
         <Content>
             <h1>{ Header }</h1>
-            <h1> { Children }</h1>
+            <h1>{Album}</h1>
+            <p> { Children }</p>
+            <img src = {Img}></img>
         </Content>
     </Wrapper>
 );
